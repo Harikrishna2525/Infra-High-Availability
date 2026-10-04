@@ -3,7 +3,6 @@ name : "HA Deployment using Terraform through Github Actions into AWS"
 on:
   push:
     branches:
-      - main
       - master
 
 jobs:
