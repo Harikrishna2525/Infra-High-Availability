@@ -4,7 +4,12 @@ on:
   push:
     branches:
       - master
-      
+
+
+permissions:
+  id-token: write
+  contents: read
+
 
 jobs:
   terraform-deploy:
@@ -19,7 +24,7 @@ jobs:
           terraform_version: 1.14.9
 
       - name: Configure AWS creditanls using OIDC 
-        uses: aws-actions/configure-aws-credentials@v2
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::920411896934:role/Github-terraform-access
           aws-region: us-east-1
