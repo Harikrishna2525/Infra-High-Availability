@@ -298,4 +298,3 @@ resource "aws_autoscaling_policy" "cpu" {
     target_value = 60.0
   }
 }
-
