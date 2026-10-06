@@ -23,11 +23,6 @@ variable "instance_type" {
   default = "t3.small"
 }
 
-variable "instance_profile" {
-  type    = string
-  default = "EC2_SSM_ACCESS"
-}
-
 variable "desired_capacity" {
   type    = number
   default = 2
