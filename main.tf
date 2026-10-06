@@ -228,7 +228,7 @@ resource "aws_launch_template" "app" {
   instance_type = var.instance_type
 
   iam_instance_profile {
-    name = "EC2_SSM_ACCESS"
+    name = "Ec2_SSM_ACCESS"
   }
 
   vpc_security_group_ids = [
